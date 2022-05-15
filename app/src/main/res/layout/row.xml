@@ -1,42 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:layout_margin="16sp"
     android:background="@color/white"
     android:id="@+id/myRow"
     android:overScrollMode="always"
     >
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="140sp"
-        android:layout_height="110sp"
-        android:src="@drawable/c"
-        />
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="110sp"
-        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         >
-      <TextView
-          android:id="@+id/language"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="TITLE"
-          android:textColor="@color/black"
-          android:fontFamily="sans-serif"
-          android:textSize="40sp"
-          />
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="random description for each programming language"
-            android:textSize="20sp"
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="140sp"
+            android:layout_height="110sp"
+            android:src="@drawable/c"
             />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="110sp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITLE"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textSize="40sp"
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="random description for each programming language"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
 
-</LinearLayout>
+
+
+
+</RelativeLayout>
