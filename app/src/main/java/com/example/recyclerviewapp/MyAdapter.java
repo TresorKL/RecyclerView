@@ -15,11 +15,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     String[] languages;
     String[] descriptions;
     int[] images;
-    public MyAdapter(Context context, String[] languages, String[] description,int[] images ){
+    public MyAdapter(Context context, String[] languages, String[] descriptions,int[] images ){
 
         this.context =context;
         this.languages=languages;
-        this.descriptions =description;
+        this.descriptions =descriptions;
         this.images=images;
     }
 
@@ -44,7 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-        return descriptions.length;
+        return images.length;
     }
 
     // ACCESS THE ROW LAYOUT Views (images, texts,...)
