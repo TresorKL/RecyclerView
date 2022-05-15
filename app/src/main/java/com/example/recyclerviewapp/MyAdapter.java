@@ -1,5 +1,6 @@
 package com.example.recyclerviewapp;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -7,6 +8,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+    Context context;
+    String[] languages;
+    String[] description;
+    int[] images;
+    public MyAdapter(Context context, String[] languages, String[] description,int[] images ){
+
+        this.context =context;
+        this.languages=languages;
+        this.description =description;
+        this.images=images;
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
