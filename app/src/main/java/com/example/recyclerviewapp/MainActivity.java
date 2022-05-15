@@ -1,6 +1,7 @@
 package com.example.recyclerviewapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -26,5 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         // instantiate adapter class
         MyAdapter myAdapter = new MyAdapter(this,languages,descriptions,images);
+        recyclerView.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
